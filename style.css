@@ -51,7 +51,7 @@ canvas {
   width: fit-content;
   margin: 5px auto 5px 10px;
   background-color: rgb(208, 204, 219);
-  border-radius: 5px 5px 0px 5px;
+  border-radius: 5px 5px 5px 0px;
   padding: 2px 5px;
   font-size: 20px;
 }
