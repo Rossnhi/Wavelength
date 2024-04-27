@@ -33,6 +33,8 @@ canvas {
 }
 
 .connected {
+  float: right;
+  margin: auto;
   color: rgb(151, 223, 123);
 }
 
