@@ -44,7 +44,7 @@ peer.on("connection", function(con) {
     });
     conn = con;
     while (chatBox.firstChild) {
-        chatBox.removeChild(parent.firstChild);
+        chatBox.removeChild(chatBox.firstChild);
     }
 });
 
@@ -63,7 +63,7 @@ function startConnection() {
           });
     });
     while (chatBox.firstChild) {
-        chatBox.removeChild(parent.firstChild);
+        chatBox.removeChild(chatBox.firstChild);
     }
 }
 
