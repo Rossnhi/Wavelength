@@ -1,7 +1,6 @@
 html, body {
   margin: 0;
   padding: 0;
-  text-align: center;
   font-family: 'Lucida Sans';
   background-color: rgb(243, 245, 163);
   color: #524b61;
@@ -13,6 +12,62 @@ h1 {
 canvas {
   display: block;
   margin: 100px auto;
+}
+
+#chatBox {
+  min-height: 100px;
+  background-color: rgb(235, 234, 192);
+  border-radius: 3px;
+  list-style: none;
+  padding: 10px;
+}
+.container {
+  margin: 100px auto 20px auto;
+  width: 80%;
+}
+
+.notConnected {
+  float: right;
+  margin: auto;
+  color: #8f8f8f;
+}
+
+.connected {
+  color: rgb(151, 223, 123);
+}
+
+.self {
+  width: fit-content;
+  margin: 5px 10px 5px auto;
+  background-color: rgb(149, 212, 107);
+  border-radius: 5px 5px 0px 5px;
+  padding: 2px 5px;
+  font-size: 20px;
+}
+
+.other {
+  width: fit-content;
+  margin: 5px auto 5px 10px;
+  background-color: rgb(208, 204, 219);
+  border-radius: 5px 5px 0px 5px;
+  padding: 2px 5px;
+  font-size: 20px;
+}
+
+#message {
+  box-sizing: border-box;
+  height: 40px;
+  width: 350px;
+  margin: 10px auto;
+}
+
+#sendMessage {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(208, 204, 219);
+  border: 1px solid rgb(71, 71, 71);
+  border-radius: 3px;
+  padding: 2px;
 }
 
 
