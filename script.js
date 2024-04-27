@@ -31,7 +31,10 @@ function displayMessage(person, message) {
 
 }
 
-let peer = new Peer();
+let peer = new Peer({
+	config: {'iceServers': [ { urls: 'stun:freeturn.net:5349' },
+     { urls: 'turns:freeturn.tel:5349', username: 'free', credential: 'free' } ]} /* Sample servers, please use appropriate ones */
+  });
 peer.on('open', function(id) {
     let textNode = document.createTextNode("My ID: " + peer.id);
     document.getElementById("id").appendChild(textNode);
